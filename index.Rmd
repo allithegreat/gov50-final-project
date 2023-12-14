@@ -14,10 +14,17 @@ I became interest in the climate change conversation as Harvard was my true  int
 My research question is "How does Carbon Emissions affect global temperatures 
 of the atmosphere, land and ocean?". As carbon emissions increase, I hypothesize that there will be a corresponding rise in temperatures across the atmosphere, land, and oceans. This hypothesis is grounded in the well-established relationship between increased levels of carbon dioxide (CO2) leading to heat retention in the Earth's atmosphere. This phenomenon is expected to contribute to elevated temperatures in the oceans, atmosphere, and on land." The explanatory variable in this research would be the carbon emissions and the outcome variable the average temperature of the ocean, land, and atmosphere. The observed pattern in my data would prove my hypothesis correct if we see a increase in temperatures as carbon emissions increase. My hypothesis would be disapproved if we saw a decrease in temperatures if carbon emissions increase.
 
-## Data
+## Data Review 
 
-My original data was taken from 
+My original data was taken from the Carbon Dioxide Information Analysis Center. The variables were Year (1751-2018), temp_anomaly, land_anomaly, ocean_anomaly, carbon_emissions. The dataset was originally used for data collection, to find trends between carbon emissions and the rise in temperature and were asked to report these findings to the United States government. 
 
+The independent variable in this data is the carbon/carbon emissions and the dependent variable of interest is the temperature of the ocean, land, and atmosphere. Because my report desires to identify a relationship between the emissions and the temperature, I am utilizing a correlation research design. 
+
+## Results
+
+Within the first graph which focuses on Global Average Temperature, there is a positive correlation between the temperature rising and carbon emissions increasing. In more recent years, specifically after the 1900s, you see that the temperatures have skyrocketed. In the second graph, which details Land Temperature, we also see a correlation between carbon emissions and the land temperature. The trends are also very similar as far as the relationship between the year and the rate in which the temperature increases. In the last graph, we see the same mirroring  patterns of the the previous graphs, which shows that the Oceanic temperatures increase that as the surge in carbon emissions does. 
+
+The main cofficient of interest is the carbon emissions because 
 
 
 ```{r}
@@ -61,9 +68,9 @@ ggplot(data = carbon,
 ```
 
 ```{r}
+ 
 carbon_fit <- lm(carbon_emissions ~ land_anomaly + temp_anomaly + ocean_anomaly,
-               data = carbon) 
-summary(carbon_fit)
+               data = carbon)
 
 var_labels <- c(
 "(Intercept)" = "Intercept",
@@ -78,4 +85,8 @@ modelsummary::modelsummary(carbon_fit,
                            coef_map = var_labels,
                            gof_map = c("nobs", "r.squared", "adj.r.squared"))
 ```
+
+## 
+
+The linear regression shows that at the start of the experiment, carbon emissions were 2720.3. As the average land temperature increases by 1 degree Celsius, the carbon emissions amount increases on average by 4113 million metric tons.. For the average global temperature, as it increases by 1 degree celcius, carbon emissions decrease by -744.155 million metric tons. As the Average Ocean Temperature increases by 1, the carbon emissions increase on average by 3495.4 million metric tons. Since the p value in the Ocean and Global Average Temp graphs are above 0.5 we do not reject the null hypothesis, meaning that it is not statistically significant. Since the Land Average Temp Graph has a p.value of 0.2, we do reject the null hypothesis meaning that it is statistically significant. 
 
