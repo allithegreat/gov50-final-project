@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/header-attrs-2.17/header-attrs.js","index_files/header-attrs-2.24/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/figure-html5/unnamed-chunk-2-1.png","index_files/figure-html5/unnamed-chunk-2-2.png","index_files/figure-html5/unnamed-chunk-2-3.png","index_files/header-attrs-2.17/header-attrs.js","index_files/header-attrs-2.24/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/kePrint-0.0.1/kePrint.js","index_files/lightable-0.0.1/lightable.css","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js","temp_carbon.csv"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1473,6 +1473,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <!--/radix_placeholder_distill-->
   <script src="index_files/header-attrs-2.24/header-attrs.js"></script>
+  <script src="index_files/kePrint-0.0.1/kePrint.js"></script>
+  <link href="index_files/lightable-0.0.1/lightable.css" rel="stylesheet" />
   <script src="index_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="index_files/popper-2.6.0/popper.min.js"></script>
   <link href="index_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1517,14 +1519,763 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
-<h2 id="project-thoughts">Project thoughts</h2>
-<p>In my HIST17 class, we delved into the disturbing history of lynchings during chattel slavery and the post-antebellum period. Specifically, we examined how white southerners hypocritically used the guise of “law and order” to suppress any Black retaliation against extreme white mob violence in the late 19th century. This violence included horrific lynching incidents targeting Black Americans. White mobs justified these actions by falsely claiming to protect white womanhood from alleged rape by Black men. Black women were also vulnerable to threats, facing sexual assault from white men or becoming victims of lynching by these mobs.</p>
-<p>My curiosity is piqued regarding data that sheds light on the relationship between the alleged crimes of Black men and women during these historical public executions. I’m particularly interested in understanding whether there are statistics indicating whether Black women were lynched at the same rates as Black men, but also if whites were lynched more or less in comparison to Black individuals during this period.</p>
 <h2 id="research-question-and-interest">Research Question and Interest</h2>
-<p>My research question is “How did race and gender dynamics influence the prevalence of lynching incidents in the late 19th century and the post-antebellum era in the United States, particularly in distinguishing between Black and white communities? What role did allegations of rape allegations play in shaping the frequency and nature of lynching incidents during this period
-I hypothesize that Black men were subjected to a higher rate of lynching compared to Black women and whites in general. Additionally, I expect that among alleged offenses, rape allegations will be more prevalent, along with alleged crimes of murder. This expectation is based on the prevalent myth of the ‘Black rapist,’ a narrative discussed in our class, which was predominantly associated with and utilized to fabricate accusations against Black men, not only to safeguard white womanhood but also to rationalize the rampant killings and mob violence during that era. Furthermore, I anticipate that in contrast to white men, there was a distinct lack of fairness in allowing Black men to have a fair trial or the opportunity to defend themselves. This disparity likely contributed to the subversion of ‘law and order,’ contrasting starkly with the handling of crimes committed by white individuals during the same historical period.</p>
-<p>My outcome variable would be within the frequency in which the lynchings occurred as it relates to the explanatory variables of race and gender. The observed pattern in my data would prove my hypothesis right if we saw a higher frequency of lynchings in Black men in comparison to Black women and whites in general but also if the allegations mainly were rape. My hypothesis would be disapproved if we saw more whites being lynched than Black men and women and if other crimes than rape were more prevalent in the data set.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>I became interest in the climate change conversation as Harvard was my true introduction to the topic due to my school not prioritizing the education of this issue (I went to a low-income public high school and our curriculum was truly all over the place). I had no clue about the impact of carbon emissions and how they contributed to the warming of the Earth and wanted to do research to see how it impacted various parts of our planet.</p>
+<p>My research question is “How does Carbon Emissions affect global temperatures
+of the atmosphere, land and ocean?”. As carbon emissions increase, I hypothesize that there will be a corresponding rise in temperatures across the atmosphere, land, and oceans. This hypothesis is grounded in the well-established relationship between increased levels of carbon dioxide (CO2) leading to heat retention in the Earth’s atmosphere. This phenomenon is expected to contribute to elevated temperatures in the oceans, atmosphere, and on land.” The explanatory variable in this research would be the carbon emissions and the outcome variable the average temperature of the ocean, land, and atmosphere. The observed pattern in my data would prove my hypothesis correct if we see a increase in temperatures as carbon emissions increase. My hypothesis would be disapproved if we saw a decrease in temperatures if carbon emissions increase.</p>
+<h2 id="data">Data</h2>
+<p>My original data was taken from</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span></span>
+<span><span class='va'>carbon</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/utils/read.table.html'>read.csv</a></span><span class='op'>(</span><span class='st'>"temp_carbon.csv"</span><span class='op'>)</span></span>
+<span><span class='va'>carbon</span></span></code></pre>
+</div>
+<pre><code>    rownames year temp_anomaly land_anomaly ocean_anomaly
+1          1 1880        -0.11        -0.48         -0.01
+2          2 1881        -0.08        -0.40          0.01
+3          3 1882        -0.10        -0.48          0.00
+4          4 1883        -0.18        -0.66         -0.04
+5          5 1884        -0.26        -0.69         -0.14
+6          6 1885        -0.25        -0.56         -0.17
+7          7 1886        -0.24        -0.51         -0.17
+8          8 1887        -0.28        -0.47         -0.23
+9          9 1888        -0.13        -0.41         -0.05
+10        10 1889        -0.09        -0.31         -0.02
+11        11 1890        -0.34        -0.51         -0.29
+12        12 1891        -0.25        -0.52         -0.15
+13        13 1892        -0.30        -0.49         -0.23
+14        14 1893        -0.32        -0.54         -0.24
+15        15 1894        -0.30        -0.38         -0.27
+16        16 1895        -0.23        -0.39         -0.17
+17        17 1896        -0.09        -0.33          0.00
+18        18 1897        -0.09        -0.26         -0.03
+19        19 1898        -0.26        -0.37         -0.22
+20        20 1899        -0.15        -0.21         -0.13
+21        21 1900        -0.07        -0.15         -0.05
+22        22 1901        -0.15        -0.12         -0.16
+23        23 1902        -0.25        -0.26         -0.24
+24        24 1903        -0.37        -0.37         -0.37
+25        25 1904        -0.45        -0.44         -0.46
+26        26 1905        -0.27        -0.33         -0.25
+27        27 1906        -0.21        -0.17         -0.22
+28        28 1907        -0.38        -0.62         -0.29
+29        29 1908        -0.43        -0.44         -0.43
+30        30 1909        -0.44        -0.43         -0.45
+31        31 1910        -0.40        -0.36         -0.42
+32        32 1911        -0.44        -0.48         -0.43
+33        33 1912        -0.34        -0.48         -0.28
+34        34 1913        -0.32        -0.31         -0.32
+35        35 1914        -0.14        -0.06         -0.17
+36        36 1915        -0.09        -0.08         -0.10
+37        37 1916        -0.32        -0.46         -0.26
+38        38 1917        -0.40        -0.63         -0.29
+39        39 1918        -0.30        -0.50         -0.21
+40        40 1919        -0.25        -0.33         -0.21
+41        41 1920        -0.23        -0.36         -0.18
+42        42 1921        -0.16        -0.15         -0.17
+43        43 1922        -0.25        -0.27         -0.24
+44        44 1923        -0.25        -0.29         -0.24
+45        45 1924        -0.24        -0.25         -0.24
+46        46 1925        -0.18        -0.15         -0.19
+47        47 1926        -0.07        -0.02         -0.10
+48        48 1927        -0.17        -0.22         -0.16
+49        49 1928        -0.18        -0.15         -0.20
+50        50 1929        -0.33        -0.49         -0.27
+51        51 1930        -0.11        -0.13         -0.11
+52        52 1931        -0.06        -0.02         -0.08
+53        53 1932        -0.13        -0.03         -0.17
+54        54 1933        -0.26        -0.36         -0.22
+55        55 1934        -0.11        -0.06         -0.13
+56        56 1935        -0.16        -0.17         -0.15
+57        57 1936        -0.12        -0.12         -0.12
+58        58 1937        -0.01        -0.02         -0.01
+59        59 1938        -0.02         0.17         -0.10
+60        60 1939         0.01         0.10         -0.03
+61        61 1940         0.16         0.07          0.20
+62        62 1941         0.27         0.10          0.35
+63        63 1942         0.11         0.06          0.13
+64        64 1943         0.11         0.07          0.12
+65        65 1944         0.28         0.19          0.32
+66        66 1945         0.18        -0.07          0.30
+67        67 1946        -0.01        -0.01         -0.01
+68        68 1947        -0.04         0.04         -0.07
+69        69 1948        -0.05         0.05         -0.10
+70        70 1949        -0.07        -0.07         -0.08
+71        71 1950        -0.15        -0.32         -0.09
+72        72 1951         0.00        -0.06          0.02
+73        73 1952         0.05        -0.05          0.08
+74        74 1953         0.13         0.20          0.10
+75        75 1954        -0.10        -0.12         -0.09
+76        76 1955        -0.13        -0.11         -0.13
+77        77 1956        -0.18        -0.40         -0.10
+78        78 1957         0.07        -0.04          0.11
+79        79 1958         0.13         0.15          0.12
+80        80 1959         0.08         0.09          0.08
+81        81 1960         0.05         0.00          0.07
+82        82 1961         0.10         0.12          0.09
+83        83 1962         0.11         0.16          0.09
+84        84 1963         0.12         0.21          0.08
+85        85 1964        -0.14        -0.22         -0.11
+86        86 1965        -0.07        -0.12         -0.05
+87        87 1966        -0.01        -0.05          0.01
+88        88 1967         0.00         0.01         -0.01
+89        89 1968        -0.03        -0.11          0.01
+90        90 1969         0.11        -0.08          0.17
+91        91 1970         0.06         0.05          0.06
+92        92 1971        -0.07        -0.02         -0.09
+93        93 1972         0.04        -0.17          0.11
+94        94 1973         0.19         0.34          0.14
+95        95 1974        -0.06        -0.18         -0.02
+96        96 1975         0.01         0.14         -0.04
+97        97 1976        -0.07        -0.23         -0.01
+98        98 1977         0.21         0.25          0.19
+99        99 1978         0.12         0.10          0.12
+100      100 1979         0.23         0.17          0.24
+101      101 1980         0.28         0.31          0.26
+102      102 1981         0.32         0.52          0.25
+103      103 1982         0.19         0.11          0.22
+104      104 1983         0.36         0.50          0.30
+105      105 1984         0.17         0.06          0.20
+106      106 1985         0.16         0.10          0.18
+107      107 1986         0.23         0.30          0.21
+108      108 1987         0.38         0.45          0.36
+109      109 1988         0.39         0.58          0.32
+110      110 1989         0.29         0.36          0.27
+111      111 1990         0.45         0.66          0.37
+112      112 1991         0.39         0.53          0.34
+113      113 1992         0.24         0.24          0.23
+114      114 1993         0.28         0.35          0.25
+115      115 1994         0.34         0.48          0.29
+116      116 1995         0.47         0.78          0.35
+117      117 1996         0.32         0.35          0.31
+118      118 1997         0.51         0.64          0.46
+119      119 1998         0.65         0.98          0.52
+120      120 1999         0.44         0.78          0.31
+121      121 2000         0.42         0.62          0.34
+122      122 2001         0.57         0.84          0.46
+123      123 2002         0.62         0.95          0.49
+124      124 2003         0.63         0.94          0.52
+125      125 2004         0.58         0.81          0.49
+126      126 2005         0.66         1.08          0.50
+127      127 2006         0.63         0.97          0.50
+128      128 2007         0.61         1.12          0.43
+129      129 2008         0.54         0.89          0.41
+130      130 2009         0.64         0.90          0.54
+131      131 2010         0.72         1.14          0.56
+132      132 2011         0.57         0.91          0.44
+133      133 2012         0.63         0.95          0.51
+134      134 2013         0.67         1.03          0.53
+135      135 2014         0.73         1.01          0.63
+136      136 2015         0.92         1.39          0.75
+137      137 2016         0.98         1.50          0.79
+138      138 2017         0.90         1.38          0.72
+139      139 2018         0.82         1.18          0.68
+140      140 1751           NA           NA            NA
+141      141 1752           NA           NA            NA
+142      142 1753           NA           NA            NA
+143      143 1754           NA           NA            NA
+144      144 1755           NA           NA            NA
+145      145 1756           NA           NA            NA
+146      146 1757           NA           NA            NA
+147      147 1758           NA           NA            NA
+148      148 1759           NA           NA            NA
+149      149 1760           NA           NA            NA
+150      150 1761           NA           NA            NA
+151      151 1762           NA           NA            NA
+152      152 1763           NA           NA            NA
+153      153 1764           NA           NA            NA
+154      154 1765           NA           NA            NA
+155      155 1766           NA           NA            NA
+156      156 1767           NA           NA            NA
+157      157 1768           NA           NA            NA
+158      158 1769           NA           NA            NA
+159      159 1770           NA           NA            NA
+160      160 1771           NA           NA            NA
+161      161 1772           NA           NA            NA
+162      162 1773           NA           NA            NA
+163      163 1774           NA           NA            NA
+164      164 1775           NA           NA            NA
+165      165 1776           NA           NA            NA
+166      166 1777           NA           NA            NA
+167      167 1778           NA           NA            NA
+168      168 1779           NA           NA            NA
+169      169 1780           NA           NA            NA
+170      170 1781           NA           NA            NA
+171      171 1782           NA           NA            NA
+172      172 1783           NA           NA            NA
+173      173 1784           NA           NA            NA
+174      174 1785           NA           NA            NA
+175      175 1786           NA           NA            NA
+176      176 1787           NA           NA            NA
+177      177 1788           NA           NA            NA
+178      178 1789           NA           NA            NA
+179      179 1790           NA           NA            NA
+180      180 1791           NA           NA            NA
+181      181 1792           NA           NA            NA
+182      182 1793           NA           NA            NA
+183      183 1794           NA           NA            NA
+184      184 1795           NA           NA            NA
+185      185 1796           NA           NA            NA
+186      186 1797           NA           NA            NA
+187      187 1798           NA           NA            NA
+188      188 1799           NA           NA            NA
+189      189 1800           NA           NA            NA
+190      190 1801           NA           NA            NA
+191      191 1802           NA           NA            NA
+192      192 1803           NA           NA            NA
+193      193 1804           NA           NA            NA
+194      194 1805           NA           NA            NA
+195      195 1806           NA           NA            NA
+196      196 1807           NA           NA            NA
+197      197 1808           NA           NA            NA
+198      198 1809           NA           NA            NA
+199      199 1810           NA           NA            NA
+200      200 1811           NA           NA            NA
+201      201 1812           NA           NA            NA
+202      202 1813           NA           NA            NA
+203      203 1814           NA           NA            NA
+204      204 1815           NA           NA            NA
+205      205 1816           NA           NA            NA
+206      206 1817           NA           NA            NA
+207      207 1818           NA           NA            NA
+208      208 1819           NA           NA            NA
+209      209 1820           NA           NA            NA
+210      210 1821           NA           NA            NA
+211      211 1822           NA           NA            NA
+212      212 1823           NA           NA            NA
+213      213 1824           NA           NA            NA
+214      214 1825           NA           NA            NA
+215      215 1826           NA           NA            NA
+216      216 1827           NA           NA            NA
+217      217 1828           NA           NA            NA
+218      218 1829           NA           NA            NA
+219      219 1830           NA           NA            NA
+220      220 1831           NA           NA            NA
+221      221 1832           NA           NA            NA
+222      222 1833           NA           NA            NA
+223      223 1834           NA           NA            NA
+224      224 1835           NA           NA            NA
+225      225 1836           NA           NA            NA
+226      226 1837           NA           NA            NA
+227      227 1838           NA           NA            NA
+228      228 1839           NA           NA            NA
+229      229 1840           NA           NA            NA
+230      230 1841           NA           NA            NA
+231      231 1842           NA           NA            NA
+232      232 1843           NA           NA            NA
+233      233 1844           NA           NA            NA
+234      234 1845           NA           NA            NA
+235      235 1846           NA           NA            NA
+236      236 1847           NA           NA            NA
+237      237 1848           NA           NA            NA
+238      238 1849           NA           NA            NA
+239      239 1850           NA           NA            NA
+240      240 1851           NA           NA            NA
+241      241 1852           NA           NA            NA
+242      242 1853           NA           NA            NA
+243      243 1854           NA           NA            NA
+244      244 1855           NA           NA            NA
+245      245 1856           NA           NA            NA
+246      246 1857           NA           NA            NA
+247      247 1858           NA           NA            NA
+248      248 1859           NA           NA            NA
+249      249 1860           NA           NA            NA
+250      250 1861           NA           NA            NA
+251      251 1862           NA           NA            NA
+252      252 1863           NA           NA            NA
+253      253 1864           NA           NA            NA
+254      254 1865           NA           NA            NA
+255      255 1866           NA           NA            NA
+256      256 1867           NA           NA            NA
+257      257 1868           NA           NA            NA
+258      258 1869           NA           NA            NA
+259      259 1870           NA           NA            NA
+260      260 1871           NA           NA            NA
+261      261 1872           NA           NA            NA
+262      262 1873           NA           NA            NA
+263      263 1874           NA           NA            NA
+264      264 1875           NA           NA            NA
+265      265 1876           NA           NA            NA
+266      266 1877           NA           NA            NA
+267      267 1878           NA           NA            NA
+268      268 1879           NA           NA            NA
+    carbon_emissions
+1                236
+2                243
+3                256
+4                272
+5                275
+6                277
+7                281
+8                295
+9                327
+10               327
+11               356
+12               372
+13               374
+14               370
+15               383
+16               406
+17               419
+18               440
+19               465
+20               507
+21               534
+22               552
+23               566
+24               617
+25               624
+26               663
+27               707
+28               784
+29               750
+30               785
+31               819
+32               836
+33               879
+34               943
+35               850
+36               838
+37               901
+38               955
+39               936
+40               806
+41               932
+42               803
+43               845
+44               970
+45               963
+46               975
+47               983
+48              1062
+49              1065
+50              1145
+51              1053
+52               940
+53               847
+54               893
+55               973
+56              1027
+57              1130
+58              1209
+59              1142
+60              1192
+61              1299
+62              1334
+63              1342
+64              1391
+65              1383
+66              1160
+67              1238
+68              1392
+69              1469
+70              1419
+71              1630
+72              1767
+73              1795
+74              1841
+75              1865
+76              2042
+77              2177
+78              2270
+79              2330
+80              2454
+81              2569
+82              2580
+83              2686
+84              2833
+85              2995
+86              3130
+87              3288
+88              3393
+89              3566
+90              3780
+91              4053
+92              4208
+93              4376
+94              4614
+95              4623
+96              4596
+97              4864
+98              5016
+99              5074
+100             5357
+101             5301
+102             5138
+103             5094
+104             5075
+105             5258
+106             5417
+107             5583
+108             5725
+109             5936
+110             6066
+111             6074
+112             6142
+113             6078
+114             6070
+115             6174
+116             6305
+117             6448
+118             6556
+119             6576
+120             6561
+121             6733
+122             6893
+123             6994
+124             7376
+125             7743
+126             8042
+127             8336
+128             8503
+129             8776
+130             8697
+131             9128
+132             9503
+133             9673
+134             9773
+135             9855
+136               NA
+137               NA
+138               NA
+139               NA
+140                3
+141                3
+142                3
+143                3
+144                3
+145                3
+146                3
+147                3
+148                3
+149                3
+150                3
+151                3
+152                3
+153                3
+154                3
+155                3
+156                3
+157                3
+158                3
+159                3
+160                4
+161                4
+162                4
+163                4
+164                4
+165                4
+166                4
+167                4
+168                4
+169                4
+170                5
+171                5
+172                5
+173                5
+174                5
+175                5
+176                5
+177                5
+178                5
+179                5
+180                6
+181                6
+182                6
+183                6
+184                6
+185                6
+186                7
+187                7
+188                7
+189                8
+190                8
+191               10
+192                9
+193                9
+194                9
+195               10
+196               10
+197               10
+198               10
+199               10
+200               11
+201               11
+202               11
+203               11
+204               12
+205               13
+206               14
+207               14
+208               14
+209               14
+210               14
+211               15
+212               16
+213               16
+214               17
+215               17
+216               18
+217               18
+218               18
+219               24
+220               23
+221               23
+222               24
+223               24
+224               25
+225               29
+226               29
+227               30
+228               31
+229               33
+230               34
+231               36
+232               37
+233               39
+234               43
+235               43
+236               46
+237               47
+238               50
+239               54
+240               54
+241               57
+242               59
+243               69
+244               71
+245               76
+246               77
+247               78
+248               83
+249               91
+250               95
+251               97
+252              104
+253              112
+254              119
+255              122
+256              130
+257              135
+258              142
+259              147
+260              156
+261              173
+262              184
+263              174
+264              188
+265              191
+266              194
+267              196
+268              210</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span></span>
+<span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>carbon</span>,</span>
+<span>       mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp_anomaly</span>,</span>
+<span>                      y <span class='op'>=</span> <span class='va'>carbon_emissions</span>, </span>
+<span>                     color <span class='op'>=</span> <span class='va'>year</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_smooth.html'>geom_smooth</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> </span>
+<span>  </span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='st'>"Global Average Temperature in Celsius"</span>,</span>
+<span>       y <span class='op'>=</span> <span class='st'>"Annual Carbon Emissions in Millions of Metric Tons"</span>,</span>
+<span>       title <span class='op'>=</span> <span class='st'>"Global Average Temp vs Annual Carbon Emissions"</span><span class='op'>)</span></span></code></pre>
+</div>
+<img src="index_files/figure-html5/unnamed-chunk-2-1.png" width="624" />
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>carbon</span>,</span>
+<span>       mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>land_anomaly</span>,</span>
+<span>                      y <span class='op'>=</span> <span class='va'>carbon_emissions</span>, </span>
+<span>                     color <span class='op'>=</span> <span class='va'>year</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_smooth.html'>geom_smooth</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='st'>"Average Temperature of Land in Celsius"</span>,</span>
+<span>       y <span class='op'>=</span> <span class='st'>"Annual Carbon Emissions in Millions of Metric Tons"</span>,</span>
+<span>       title <span class='op'>=</span> <span class='st'>"Average Land Temperature vs Annual Carbon Emissions"</span><span class='op'>)</span></span></code></pre>
+</div>
+<img src="index_files/figure-html5/unnamed-chunk-2-2.png" width="624" />
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>carbon</span>,</span>
+<span>       mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>ocean_anomaly</span>,</span>
+<span>                      y <span class='op'>=</span> <span class='va'>carbon_emissions</span>, </span>
+<span>                     color <span class='op'>=</span> <span class='va'>year</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_smooth.html'>geom_smooth</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='st'>"Average Temperature of Ocean in Celsius"</span>,</span>
+<span>       y <span class='op'>=</span> <span class='st'>"Annual Carbon Emissions in Millions of Metric Tons"</span>,</span>
+<span>       title <span class='op'>=</span> <span class='st'>"Average Ocean Temperature vs Annual Carbon Emissions"</span><span class='op'>)</span></span></code></pre>
+</div>
+<p><img src="index_files/figure-html5/unnamed-chunk-2-3.png" width="624" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>carbon_fit</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span><span class='op'>(</span><span class='va'>carbon_emissions</span> <span class='op'>~</span> <span class='va'>land_anomaly</span> <span class='op'>+</span> <span class='va'>temp_anomaly</span> <span class='op'>+</span> <span class='va'>ocean_anomaly</span>,</span>
+<span>               data <span class='op'>=</span> <span class='va'>carbon</span><span class='op'>)</span> </span>
+<span><span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='op'>(</span><span class='va'>carbon_fit</span><span class='op'>)</span></span></code></pre>
+</div>
+<pre><code>
+Call:
+lm(formula = carbon_emissions ~ land_anomaly + temp_anomaly + 
+    ocean_anomaly, data = carbon)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-3029.08  -843.28     1.49   861.04  3072.66 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)     2720.3      105.5  25.778   &lt;2e-16 ***
+land_anomaly    4113.6     3615.7   1.138    0.257    
+temp_anomaly    -744.2    13729.8  -0.054    0.957    
+ocean_anomaly   3495.4    10238.2   0.341    0.733    
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Residual standard error: 1156 on 131 degrees of freedom
+  (133 observations deleted due to missingness)
+Multiple R-squared:  0.8276,    Adjusted R-squared:  0.8236 
+F-statistic: 209.5 on 3 and 131 DF,  p-value: &lt; 2.2e-16</code></pre>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>var_labels</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span></span>
+<span><span class='st'>"(Intercept)"</span> <span class='op'>=</span> <span class='st'>"Intercept"</span>,</span>
+<span><span class='st'>"land_anomaly"</span> <span class='op'>=</span> <span class='st'>"Avg Land Temp"</span>,</span>
+<span><span class='st'>"temp_anomaly"</span> <span class='op'>=</span> <span class='st'>"Global Avg Temp"</span>,</span>
+<span><span class='st'>"ocean_anomaly"</span> <span class='op'>=</span> <span class='st'>"Avg Ocean Temp"</span></span>
+<span><span class='op'>)</span></span>
+<span></span>
+<span><span class='fu'>modelsummary</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/modelsummary/man/modelsummary.html'>modelsummary</a></span><span class='op'>(</span><span class='va'>carbon_fit</span>,</span>
+<span>                           statistic <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"s.e. = {std.error}"</span>,</span>
+<span>                                         <span class='st'>"p = {p.value}"</span><span class='op'>)</span>, </span>
+<span>                           coef_map <span class='op'>=</span> <span class='va'>var_labels</span>,</span>
+<span>                           gof_map <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"nobs"</span>, <span class='st'>"r.squared"</span>, <span class='st'>"adj.r.squared"</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
+</div>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:center;">
+ (1)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Intercept
+</td>
+<td style="text-align:center;">
+2720.324
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:center;">
+s.e. = 105.530
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:center;">
+p = &lt;0.001
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Avg Land Temp
+</td>
+<td style="text-align:center;">
+4113.570
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:center;">
+s.e. = 3615.705
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:center;">
+p = 0.257
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Global Avg Temp
+</td>
+<td style="text-align:center;">
+−744.155
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:center;">
+s.e. = 13729.846
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:center;">
+p = 0.957
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Avg Ocean Temp
+</td>
+<td style="text-align:center;">
+3495.425
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:center;">
+s.e. = 10238.249
+</td>
+</tr>
+<tr>
+<td style="text-align:left;box-shadow: 0px 1.5px">
+</td>
+<td style="text-align:center;box-shadow: 0px 1.5px">
+p = 0.733
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Num.Obs.
+</td>
+<td style="text-align:center;">
+135
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+R2
+</td>
+<td style="text-align:center;">
+0.828
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+R2 Adj.
+</td>
+<td style="text-align:center;">
+0.824
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

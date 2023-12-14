@@ -7,21 +7,75 @@ output:
     self_contained: false
 ---
 
-
-
-## Project thoughts
-
-
-In my HIST17 class, we delved into the disturbing history of lynchings during chattel slavery and the post-antebellum period. Specifically, we examined how white southerners hypocritically used the guise of "law and order" to suppress any Black retaliation against extreme white mob violence in the late 19th century. This violence included horrific lynching incidents targeting Black Americans. White mobs justified these actions by falsely claiming to protect white womanhood from alleged rape by Black men. Black women were also vulnerable to threats, facing sexual assault from white men or becoming victims of lynching by these mobs.
-
-My curiosity is piqued regarding data that sheds light on the relationship between the alleged crimes of Black men and women during these historical public executions. I'm particularly interested in understanding whether there are statistics indicating whether Black women were lynched at the same rates as Black men, but also if whites were lynched more or less in comparison to Black individuals during this period.
-
 ## Research Question and Interest
 
+I became interest in the climate change conversation as Harvard was my true  introduction to the topic due to my school not prioritizing the education of this issue (I went to a low-income public high school and our curriculum was truly all over the place). I had no clue about the impact of carbon emissions and how they contributed to the warming of the Earth and wanted to do research to see how it impacted various parts of our planet. 
 
-My research question is "How did race and gender dynamics influence the prevalence of lynching incidents in the late 19th century and the post-antebellum era in the United States, particularly in distinguishing between Black and white communities? What role did allegations of rape allegations play in shaping the frequency and nature of lynching incidents during this period 
-I hypothesize that Black men were subjected to a higher rate of lynching compared to Black women and whites in general. Additionally, I expect that among alleged offenses, rape allegations will be more prevalent, along with alleged crimes of murder. This expectation is based on the prevalent myth of the 'Black rapist,' a narrative discussed in our class, which was predominantly associated with and utilized to fabricate accusations against Black men, not only to safeguard white womanhood but also to rationalize the rampant killings and mob violence during that era. Furthermore, I anticipate that in contrast to white men, there was a distinct lack of fairness in allowing Black men to have a fair trial or the opportunity to defend themselves. This disparity likely contributed to the subversion of 'law and order,' contrasting starkly with the handling of crimes committed by white individuals during the same historical period. 
+My research question is "How does Carbon Emissions affect global temperatures 
+of the atmosphere, land and ocean?". As carbon emissions increase, I hypothesize that there will be a corresponding rise in temperatures across the atmosphere, land, and oceans. This hypothesis is grounded in the well-established relationship between increased levels of carbon dioxide (CO2) leading to heat retention in the Earth's atmosphere. This phenomenon is expected to contribute to elevated temperatures in the oceans, atmosphere, and on land." The explanatory variable in this research would be the carbon emissions and the outcome variable the average temperature of the ocean, land, and atmosphere. The observed pattern in my data would prove my hypothesis correct if we see a increase in temperatures as carbon emissions increase. My hypothesis would be disapproved if we saw a decrease in temperatures if carbon emissions increase.
 
-My outcome variable would be within the frequency in which the lynchings occurred as it relates to the explanatory variables of race and gender. The observed pattern in my data would prove my hypothesis right if we saw a higher frequency of lynchings in Black men in comparison to Black women and whites in general but also if the allegations mainly were rape.  My hypothesis would be disapproved if we saw more whites being lynched than Black men and women and if other crimes than rape were more prevalent in the data set.
+## Data
 
+My original data was taken from 
+
+
+
+```{r}
+
+library(tidyverse)
+carbon <- read.csv("temp_carbon.csv")
+carbon
+
+```
+
+```{r}
+library(ggplot2)
+ggplot(data = carbon,
+       mapping = aes(x = temp_anomaly,
+                      y = carbon_emissions, 
+                     color = year)) +
+  geom_point() + geom_smooth() + 
+  
+  labs(x = "Global Average Temperature in Celsius",
+       y = "Annual Carbon Emissions in Millions of Metric Tons",
+       title = "Global Average Temp vs Annual Carbon Emissions")
+
+ggplot(data = carbon,
+       mapping = aes(x = land_anomaly,
+                      y = carbon_emissions, 
+                     color = year)) +
+  geom_point() + geom_smooth() +
+   labs(x = "Average Temperature of Land in Celsius",
+       y = "Annual Carbon Emissions in Millions of Metric Tons",
+       title = "Average Land Temperature vs Annual Carbon Emissions")
+
+ggplot(data = carbon,
+       mapping = aes(x = ocean_anomaly,
+                      y = carbon_emissions, 
+                     color = year)) +
+  geom_point() + geom_smooth() +
+  labs(x = "Average Temperature of Ocean in Celsius",
+       y = "Annual Carbon Emissions in Millions of Metric Tons",
+       title = "Average Ocean Temperature vs Annual Carbon Emissions")
+
+```
+
+```{r}
+carbon_fit <- lm(carbon_emissions ~ land_anomaly + temp_anomaly + ocean_anomaly,
+               data = carbon) 
+summary(carbon_fit)
+
+var_labels <- c(
+"(Intercept)" = "Intercept",
+"land_anomaly" = "Avg Land Temp",
+"temp_anomaly" = "Global Avg Temp",
+"ocean_anomaly" = "Avg Ocean Temp"
+)
+
+modelsummary::modelsummary(carbon_fit,
+                           statistic = c("s.e. = {std.error}",
+                                         "p = {p.value}"), 
+                           coef_map = var_labels,
+                           gof_map = c("nobs", "r.squared", "adj.r.squared"))
+```
 
